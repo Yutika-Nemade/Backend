@@ -1,0 +1,22 @@
+we have browser, need to create a server use express for this, we need to listen like /: home route, /login: login setup, will handle get request
+
+To create empty node application
+npm init
+
+We can run the js file using node index.js but when we run on server we should specify the commands in package.json file
+like "scripts": {
+    "start": "node index.js"
+  },
+  
+to run this script --> use npm run start  
+
+
+After changing anything in index.js file, doesnt reflect on server, so for this we have to restart server everytime after modfiying index.js
+
+
+To add to github
+git init
+git add *
+git commit -m "First commit"
+git remote add origin https://github.com/Yutika-Nemade/Backend.git
+git push -u origin main

@@ -1,0 +1,34 @@
+Server is a software
+
+Backend development Roadmap
+
+2 major components
+1. A programming language -- Java, JS, PHP, golang, c++  ==> on a framework
+
+2. A database -- Mongo, MySQL, Postgres, sqlite  ==> ORM ODM
+
+
+browser/mobile <--> API <--> Backend <--> DB (Another continent)
+
+
+A javascript based backend
+when we create backend will be dealing with 3 components data, file, third party (API)
+
+JS Runtime : Nodejs/ Deno/ Bun
+
+File structure
+1. Package.json
+2. environment variables (.env)
+3. Readme, .git, .lint, prettier, etc.
+4. src
+	1. index (file)--> entry file of application -- DB connects
+	2. App (file) --> configurations, cookie, urlencode
+	3. constants (file) --> enums, DB-name  eg. seats in reservation system
+	   directories
+	4. DB  -- code that connects with database
+	5. Models -- structure of data
+	6. Controllers -- methods/ functions that processes data
+	7. Routes -- routing 
+	8. Middlewares 
+	9. Utils -- utility (like mail, file upload, etc.)
+	10. More (depends)

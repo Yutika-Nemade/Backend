@@ -1,0 +1,13 @@
+Before building backend application, build the data model for it analyzing the basic screens and the fields that need to be stored in database
+
+standard practice for data schema file name
+user.model.js  -- standard format
+
+we create model in js file in below format
+export const user = mongoose.model("User", userSchema)
+
+but when it gets stored in mongodb it stores as 'users'; adding plurals to name(adds s to the end of the name) and all letters in lowercase
+
+{timestamps : true} adds two columns i.e. createAt, updatedAt ; define this after the schema definition
+
+We can store the images or pdf in mongodb in buffer format but this is not the right approach as it makes the database heavy instead of this use third party api or store the images in a folder and give the public url
